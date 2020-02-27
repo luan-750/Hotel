@@ -89,7 +89,119 @@
     </header>
 
     <main>
-      <div class="container-fluid"></div>
+      <div class="container-fluid">
+        <h2>Realize a sua reserva</h2>
+
+        <!-- ##### Início do formulário de reservas ##### -->
+
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <label for="Nome">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Nome"
+                placeholder="Nome Completo"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="CPF">CPF</label>
+              <input
+                type="text"
+                class="form-control"
+                id="CPF"
+                placeholder="XXX.XXX.XXX-XX"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <label for="Email">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="Email"
+                placeholder="email@dominio.com"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="Telefone">Telefone</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="Telefone"
+                placeholder="(XX) XXXXX-XXXX"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Abaixo as informações sobre a hospedagem -->
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="Suite">Suite</label>
+              <select id="Suite" class="form-control">
+                <option selected>Selecione</option>
+                <option value="Suite Standard">Suite Standard</option>
+                <option value="Suite Double">Suite Double</option>
+                <option value="Suite Master">Suite Master</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="Check-in">Check-in</label>
+              <input type="date" class="form-control" id="Check-in" required />
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="CheckOut">CheckOut</label>
+              <input type="date" class="form-control" id="CheckOut" required />
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="NAdultos">Nº Adultos</label>
+              <input
+                type="number"
+                class="form-control"
+                id="NAdultos"
+                max="5"
+                min="1"
+                value="1"
+                required
+              />
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="NCriancas">Nº Crianças</label>
+              <input
+                type="number"
+                class="form-control"
+                id="NCriancas"
+                max="4"
+                min="0"
+                value="0"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Fim das informaçõe sobre a hospedagem -->
+
+          <div class="form-group">
+            <label for="Observacao">Observação</label>
+            <textarea class="form-control"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-danger">Reservar</button>
+        </form>
+
+        <!-- ##### Fim do formulário de reservas ##### -->
+      </div>
     </main>
 
     <footer>
